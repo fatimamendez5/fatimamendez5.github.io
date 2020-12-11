@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+#mainDiv {
+  width: 600px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.attention {
+  font-weight: bold;
+  color: #F00;
+}
+
+#newContentsDiv {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
