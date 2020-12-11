@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Samples.css">
+  <title>Why Arrays 2</title>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var actors = new Array();
+    
+    function writeTheActors()
+    {
+      var contentString = "";
+      
+      for (var i = 0; i < actors.length; i++)
+      {
+        contentString += actors[i] + "<br />";
+      }
+      
+      document.getElementById("contentDiv").innerHTML = contentString;
+    }
+
+    function askForActors()
+    {
+      var keepGoing = true;
+      var theActor;
+      
+      while (keepGoing)
+      {
+        theActor = prompt("Give me your name , please.  Press Cancel or press Enter with nothing entered, when you are done.","");
+        if ((theActor != null) && (theActor != ""))
+        {
+          actors[actors.length] = theActor;
+        }
+        else
+        {
+          keepGoing = false;
+        }
+      }
+      
+      writeTheActors();
+    }
+    /* ]]> */
+  </script>
+</head>
+
+<body onload="askForActors();">
+  
+  <div id="mainDiv">
+    <h3>Iformation</h3>
+
+    <h4>Your name is:</h4>
+
+    <div id="contentDiv"></div>
+  </div>
+  <div id="mainDiv">
+    <h3>your age is:</h3>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      for (stuff in window)
+      {
+        document.write(stuff + "<br/>");
+      }
+      /* ]]> */
+    </script>
+  </div>
+</body>
+</html>
